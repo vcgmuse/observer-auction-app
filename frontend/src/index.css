@@ -1,0 +1,132 @@
+/* frontend/src/index.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+#root { /* React mounts to a div with id="root" by default */
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card.detached {
+    opacity: 0.6;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.card-content p {
+    margin-bottom: 8px;
+}
+
+.auction-status {
+    font-weight: bold;
+    color: #007bff;
+}
+.auction-status.sold {
+    color: #dc3545;
+}
+.auction-status.going-once, .auction-status.going-twice {
+    color: #ffc107;
+}
+
+.tutorial-snippet {
+    background-color: #eaf7ed;
+    border-left: 4px solid #4CAF50;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #33691e;
+}
+
+.tutorial-snippet strong {
+    color: #2e7d32;
+}
+
+.section-title {
+    grid-column: 1 / -1; /* Spans across both columns */
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-column {
+    grid-column: 1;
+}
+
+.observers-column {
+    grid-column: 2;
+}
+
+.bidder-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}

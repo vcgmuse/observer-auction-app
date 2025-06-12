@@ -1,0 +1,65 @@
+# Gitignore for observer-auction-app (Node.js Frontend & Python Backend)
+
+# -------------------------------------------------------------------
+# 1. Node.js (Frontend - typically in /frontend)
+# -------------------------------------------------------------------
+node_modules/
+dist/          # Production build output from 'npm run build' (e.g., Vite/Webpack output)
+build/         # Another common build output directory (e.g., Create React App)
+.env           # Environment variables (often local and should not be committed)
+.env.local     # Local environment variables
+npm-debug.log* # NPM debug logs
+yarn-debug.log*
+yarn-error.log*
+.parcel-cache/ # Parcel bundler cache
+.vite/         # Vite cache
+
+# -------------------------------------------------------------------
+# 2. Python (Backend - typically in /backend_python)
+# -------------------------------------------------------------------
+__pycache__/      # Compiled Python bytecode (e.g., .pyc files)
+*.pyc             # More specific .pyc files
+.Python/          # Common virtualenv directory
+venv/             # Preferred virtual environment directory
+.venv/            # Another common virtual environment directory
+env/              # Generic virtual environment directory
+*/venv/           # Covers venv inside subdirectories
+*/.venv/          # Covers .venv inside subdirectories
+
+.env              # Environment variables (often local and should not be committed)
+.flaskenv         # Flask specific environment variables
+*.log             # Log files (e.g., server logs, if any)
+*.sqlite3         # SQLite database files (if you start using one)
+*.db              # Generic database files
+
+# Python testing and linting tools
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+
+# -------------------------------------------------------------------
+# 3. Operating System / IDE Specific Files
+# -------------------------------------------------------------------
+.DS_Store             # macOS files
+Thumbs.db             # Windows thumbnail cache
+.vscode/              # VS Code settings (if you don't want to share workspace settings)
+.idea/                # IntelliJ IDEA project files
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------------------------------------------------
+# 4. General Logs, Cache, and Temporary Files
+# -------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+.project
+.classpath
+.settings/
+
+# -------------------------------------------------------------------
+# 5. Backup Files
+# -------------------------------------------------------------------
+*~                    # Emacs/Vim backup files
+\#*#                  # Emacs backup files
